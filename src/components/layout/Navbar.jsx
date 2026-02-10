@@ -43,7 +43,7 @@ const Navbar = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
-                className="text-slate-300 hover:text-white transition-colors duration-300 font-medium"
+                className="text-gray-300 hover:text-gold-400 transition-colors duration-300 font-medium"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -56,7 +56,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-slate-300 hover:text-white"
+            className="md:hidden p-2 text-gray-300 hover:text-white"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -73,14 +73,14 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden glass border-t border-slate-700/50"
+            className="md:hidden glass border-t border-gray-800"
           >
             <div className="px-4 py-4 space-y-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block py-2 px-4 text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-all duration-300"
+                  className="block py-2 px-4 text-gray-300 hover:text-gold-400 hover:bg-gray-900 rounded-lg transition-all duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

@@ -1,35 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
-/* Define custom colors with @theme */
+/* Define gold and black color palette */
 @theme {
-  --color-primary-50: #eef2ff;
-  --color-primary-100: #e0e7ff;
-  --color-primary-200: #c7d2fe;
-  --color-primary-300: #a5b4fc;
-  --color-primary-400: #818cf8;
-  --color-primary-500: #6366f1;
-  --color-primary-600: #4f46e5;
-  --color-primary-700: #4338ca;
-  --color-primary-800: #3730a3;
-  --color-primary-900: #312e81;
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  --color-gold-700: #b45309;
+  --color-gold-800: #92400e;
+  --color-gold-900: #78350f;
 
-  --color-secondary-50: #f5f3ff;
-  --color-secondary-100: #ede9fe;
-  --color-secondary-200: #ddd6fe;
-  --color-secondary-300: #c4b5fd;
-  --color-secondary-400: #a78bfa;
-  --color-secondary-500: #8b5cf6;
-  --color-secondary-600: #7c3aed;
-  --color-secondary-700: #6d28d9;
-  --color-secondary-800: #5b21b6;
-  --color-secondary-900: #4c1d95;
+  --color-primary-50: #fffbeb;
+  --color-primary-100: #fef3c7;
+  --color-primary-200: #fde68a;
+  --color-primary-300: #fcd34d;
+  --color-primary-400: #fbbf24;
+  --color-primary-500: #f59e0b;
+  --color-primary-600: #d97706;
+  --color-primary-700: #b45309;
+  --color-primary-800: #92400e;
+  --color-primary-900: #78350f;
+
+  --color-secondary-50: #fefce8;
+  --color-secondary-100: #fef9c3;
+  --color-secondary-200: #fef08a;
+  --color-secondary-300: #fde047;
+  --color-secondary-400: #facc15;
+  --color-secondary-500: #eab308;
+  --color-secondary-600: #ca8a04;
+  --color-secondary-700: #a16207;
+  --color-secondary-800: #854d0e;
+  --color-secondary-900: #713f12;
 }
 
 /* Custom base styles */
 @layer base {
   * {
-    border-color: rgb(51 65 85);
+    border-color: rgb(39 39 42);
   }
 
   html {
@@ -37,8 +48,8 @@
   }
 
   body {
-    background-color: rgb(15 23 42);
-    color: rgb(248 250 252);
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -53,7 +64,7 @@
 /* Custom utilities */
 @layer components {
   .gradient-text {
-    background: linear-gradient(to right, rgb(129 140 248), rgb(167 139 250), rgb(129 140 248));
+    background: linear-gradient(to right, rgb(251 191 36), rgb(234 179 8), rgb(251 191 36));
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -62,9 +73,9 @@
   }
 
   .glass {
-    background-color: rgb(30 41 59 / 0.5);
+    background-color: rgb(24 24 24 / 0.6);
     backdrop-filter: blur(12px);
-    border: 1px solid rgb(51 65 85 / 0.5);
+    border: 1px solid rgb(68 68 68 / 0.5);
   }
 
   .btn-primary {
@@ -74,15 +85,15 @@
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     font-weight: 600;
-    color: white;
-    background: linear-gradient(to right, rgb(99 102 241), rgb(139 92 246));
+    color: rgb(0 0 0);
+    background: linear-gradient(to right, rgb(251 191 36), rgb(234 179 8));
     transition: all 0.3s;
   }
 
   .btn-primary:hover {
-    background: linear-gradient(to right, rgb(79 70 229), rgb(124 58 237));
+    background: linear-gradient(to right, rgb(250 204 21), rgb(234 179 8));
     transform: scale(1.05);
-    box-shadow: 0 10px 15px -3px rgb(99 102 241 / 0.25);
+    box-shadow: 0 10px 15px -3px rgb(251 191 36 / 0.3);
   }
 
   .btn-secondary {
@@ -92,13 +103,15 @@
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     font-weight: 600;
-    color: rgb(15 23 42);
-    background-color: rgb(248 250 252);
+    color: rgb(255 255 255);
+    background-color: rgb(24 24 24);
+    border: 1px solid rgb(68 68 68);
     transition: all 0.3s;
   }
 
   .btn-secondary:hover {
-    background-color: rgb(241 245 249);
+    background-color: rgb(39 39 42);
+    border-color: rgb(251 191 36);
     transform: scale(1.05);
   }
 
@@ -108,7 +121,7 @@
 
   .card-hover:hover {
     transform: scale(1.02);
-    box-shadow: 0 20px 25px -5px rgb(99 102 241 / 0.1);
+    box-shadow: 0 20px 25px -5px rgb(251 191 36 / 0.15);
   }
 
   .section-padding {
@@ -128,12 +141,12 @@
   }
 }
 
-/* Background gradient orbs */
+/* Background gradient orbs - Gold theme */
 .bg-orb {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.3;
+  opacity: 0.25;
   pointer-events: none;
   z-index: 0;
 }
@@ -141,7 +154,7 @@
 .bg-orb-1 {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: radial-gradient(circle, #fbbf24 0%, #f59e0b 50%, transparent 70%);
   top: 10%;
   left: 10%;
   animation: float 6s ease-in-out infinite;
@@ -150,7 +163,7 @@
 .bg-orb-2 {
   width: 300px;
   height: 300px;
-  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  background: radial-gradient(circle, #facc15 0%, #eab308 50%, transparent 70%);
   bottom: 20%;
   right: 10%;
   animation: float 8s ease-in-out infinite reverse;
@@ -159,7 +172,7 @@
 .bg-orb-3 {
   width: 250px;
   height: 250px;
-  background: linear-gradient(135deg, #a78bfa 0%, #818cf8 100%);
+  background: radial-gradient(circle, #fde047 0%, #facc15 50%, transparent 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

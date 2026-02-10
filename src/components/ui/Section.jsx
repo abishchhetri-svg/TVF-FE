@@ -30,7 +30,7 @@ export const SectionTitle = ({ title, subtitle, align = 'center' }) => {
         <span className="gradient-text">{title}</span>
       </h2>
       {subtitle && (
-        <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}

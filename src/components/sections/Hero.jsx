@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="inline-block mb-6"
           >
-            <span className="px-4 py-2 rounded-full glass text-sm font-medium text-primary-400">
+            <span className="px-4 py-2 rounded-full glass text-sm font-medium text-gold-400">
               {content.hero.tagline}
             </span>
           </motion.div>
@@ -33,7 +33,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6"
           >
-            <span className="text-slate-50">{content.hero.title}</span>
+            <span className="text-white">{content.hero.title}</span>
             <br />
             <motion.span
               className="gradient-text animate-gradient bg-[length:200%_auto]"
@@ -50,7 +50,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-slate-400 text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
           >
             {content.hero.subtitle}
           </motion.p>
@@ -79,7 +79,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center text-slate-400"
+          className="flex flex-col items-center text-gray-400"
         >
           <span className="text-sm mb-2">Scroll to explore</span>
           <ArrowDown size={20} />

@@ -23,8 +23,8 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="glass rounded-2xl p-8 card-hover"
           >
-            <h3 className="text-2xl font-bold mb-4 text-slate-100">{story.title}</h3>
-            <p className="text-slate-400 leading-relaxed">{story.text}</p>
+            <h3 className="text-2xl font-bold mb-4 text-white">{story.title}</h3>
+            <p className="text-gray-400 leading-relaxed">{story.text}</p>
           </motion.div>
 
           {/* Mission */}
@@ -35,8 +35,8 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="glass rounded-2xl p-8 card-hover"
           >
-            <h3 className="text-2xl font-bold mb-4 text-slate-100">{mission.title}</h3>
-            <p className="text-slate-400 leading-relaxed">{mission.text}</p>
+            <h3 className="text-2xl font-bold mb-4 text-white">{mission.title}</h3>
+            <p className="text-gray-400 leading-relaxed">{mission.text}</p>
           </motion.div>
         </div>
       </div>

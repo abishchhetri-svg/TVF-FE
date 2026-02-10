@@ -17,21 +17,21 @@ const ServiceCard = ({ service, index }) => {
       className="glass rounded-2xl p-8 card-hover group"
     >
       {/* Icon */}
-      <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-500/20 to-secondary-500/20 mb-6 group-hover:from-primary-500/30 group-hover:to-secondary-500/30 transition-all duration-300">
-        <Icon className="text-primary-400 group-hover:text-primary-300 transition-colors duration-300" size={28} />
+      <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/20 mb-6 group-hover:from-gold-500/30 group-hover:to-gold-600/30 transition-all duration-300">
+        <Icon className="text-gold-400 group-hover:text-gold-300 transition-colors duration-300" size={28} />
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-bold mb-3 text-slate-100">{service.title}</h3>
+      <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
 
       {/* Description */}
-      <p className="text-slate-400 mb-6 leading-relaxed">{service.description}</p>
+      <p className="text-gray-400 mb-6 leading-relaxed">{service.description}</p>
 
       {/* Features */}
       <ul className="space-y-2">
         {service.features.map((feature) => (
-          <li key={feature} className="flex items-center text-slate-400 text-sm">
-            <Check size={16} className="text-primary-400 mr-2 flex-shrink-0" />
+          <li key={feature} className="flex items-center text-gray-400 text-sm">
+            <Check size={16} className="text-gold-400 mr-2 flex-shrink-0" />
             <span>{feature}</span>
           </li>
         ))}
