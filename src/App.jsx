@@ -1,7 +1,7 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
-import Services from './components/sections/Services';
+import Waitlist from './components/sections/Waitlist';
 import Footer from './components/layout/Footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Services />
+        <Waitlist />
       </main>
       <Footer />
     </div>

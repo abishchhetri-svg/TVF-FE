@@ -27,23 +27,23 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo */}
           <motion.a
             href="#home"
-            className="text-xl sm:text-2xl font-bold gradient-text"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
           >
-            {content.navbar.logo}
+            <img src="/logo.png" alt="The Venture Forge" className="h-8 sm:h-10 md:h-12" />
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link, index) => (
               <motion.a
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-gold-400 transition-colors duration-300 font-medium"
+                className="text-gray-300 hover:text-gold-400 transition-colors duration-300 font-medium text-sm lg:text-base"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -60,7 +60,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} sm:size={24} /> : <Menu size={20} sm:size={24} />}
           </button>
         </div>
       </div>
@@ -75,12 +75,12 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden glass border-t border-gray-800"
           >
-            <div className="px-4 py-4 space-y-3">
+            <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block py-2 px-4 text-gray-300 hover:text-gold-400 hover:bg-gray-900 rounded-lg transition-all duration-300"
+                  className="block py-3 px-4 text-gray-300 hover:text-gold-400 hover:bg-gray-900 rounded-lg transition-all duration-300 text-sm font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

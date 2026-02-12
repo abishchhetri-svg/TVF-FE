@@ -4,7 +4,7 @@ const Section = ({ id, children, className = '' }) => {
   return (
     <section
       id={id}
-      className={`section-padding relative ${className}`}
+      className={`py-12 sm:py-16 lg:py-24 relative ${className}`}
     >
       {children}
     </section>
@@ -24,13 +24,13 @@ export const SectionTitle = ({ title, subtitle, align = 'center' }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className={`mb-16 ${alignClasses[align]}`}
+      className={`mb-10 sm:mb-12 md:mb-16 ${alignClasses[align]}`}
     >
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
         <span className="gradient-text">{title}</span>
       </h2>
       {subtitle && (
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto px-4">
           {subtitle}
         </p>
       )}

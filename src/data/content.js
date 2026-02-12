@@ -4,49 +4,55 @@ export const content = {
     links: [
       { name: 'Home', href: '#home' },
       { name: 'About', href: '#about' },
-      { name: 'Services', href: '#services' },
+      { name: 'Join Waitlist', href: '#waitlist' },
     ],
   },
 
   hero: {
-    tagline: 'AI-Powered Financial Innovation',
+    tagline: 'Redefining Financial Intelligence with AI',
     title: 'Forging the Future of',
-    highlight: 'AI-Powered Finance',
-    subtitle: 'Transform your investment strategy with cutting-edge artificial intelligence and machine learning algorithms. Unlock insights that were once reserved for institutional investors.',
+    highlight: 'Next-Generation Finance',
+    subtitle: 'Harness the power of artificial intelligence and machine learning to elevate your investment strategy. Unlock institutional-grade insights, automate decisions, and maximize returns like never before.',
     ctas: [
-      { text: 'Get Started', href: '#home', primary: true },
-      { text: 'View Demo', href: '#services', primary: false },
+      { text: 'Join Waitlist', href: '#waitlist', primary: true },
+      { text: 'Explore Our Demo', href: '#services', primary: false },
     ],
   },
 
   about: {
     title: 'About Us',
-    subtitle: 'Pioneering the next generation of financial technology',
+    subtitle: 'Revolutionizing Finance with AI & Innovation',
     story: {
       title: 'Our Story',
-      text: 'Founded with a vision to democratize institutional-grade AI, The Venture Forge is at the forefront of financial innovation. We combine deep expertise in artificial intelligence, machine learning, and quantitative finance to deliver solutions that transform how investors approach the market.',
+      text: 'The Venture Forge was born from a vision to democratize cutting-edge AI for every investor. We merge deep expertise in artificial intelligence, machine learning, and quantitative finance to deliver transformative solutions that empower smarter, faster investment decisions.',
     },
     mission: {
       title: 'Our Mission',
-      text: 'To empower every investor with AI-driven insights and tools that were once exclusive to hedge funds and institutional traders. We believe in making sophisticated financial technology accessible to all.',
+      text: 'We exist to give every investor the tools and insights once reserved for elite hedge funds. By combining advanced technology with market expertise, we make sophisticated financial strategies accessible, actionable, and profitable for all.',
     },
   },
 
   services: {
     title: 'Our Services',
-    subtitle: 'Comprehensive AI-powered financial solutions',
+    subtitle: 'AI-Powered Solutions for Smarter Investing',
     items: [
       {
         icon: 'Brain',
-        title: 'AI-Driven Finance',
-        description: 'Leveraging machine learning and advanced analytics, we develop intelligent financial solutions that adapt to market dynamics. Our proprietary algorithms analyze vast datasets to identify opportunities and mitigate risks in real-time.',
-        features: ['Machine Learning', 'Real-time Analytics', 'Risk Mitigation'],
+        title: 'Intelligent Financial Insights',
+        description: 'Leverage machine learning to analyze vast datasets, identify hidden opportunities, and minimize risks in real-time. Our AI solutions adapt dynamically to market trends, giving you a decisive edge.',
+        features: ['Predictive Analytics', 'Adaptive AI Models', 'Real-Time Risk Management'],
       },
       {
         icon: 'TrendingUp',
-        title: 'Algorithmic Trading',
-        description: 'Our sophisticated trading algorithms execute strategies with precision and speed, operating across multiple asset classes. Built on decades of financial expertise and modern technology, we deliver consistent performance in diverse market conditions.',
-        features: ['Multi-asset Trading', 'Precision Execution', 'Consistent Performance'],
+        title: 'Advanced Algorithmic Trading',
+        description: 'Deploy precision-engineered trading algorithms across multiple asset classes. Built with decades of financial expertise and cutting-edge technology, our systems deliver consistent, high-performance results under any market conditions.',
+        features: ['Multi-Asset Execution', 'High-Speed Precision', 'Optimized Performance'],
+      },
+      {
+        icon: 'Cloud',
+        title: 'Scalable SaaS Platforms',
+        description: 'Access our cloud-native financial platforms anywhere, anytime. With enterprise-grade security, seamless scalability, and automated updates, deploy intelligent trading tools and analytics in just a few clicks.',
+        features: ['Cloud-Native Architecture', 'Instant Scalability', '24/7 Availability', 'API-First Integration'],
       },
     ],
   },
@@ -54,12 +60,12 @@ export const content = {
   footer: {
     company: {
       name: 'The Venture Forge',
-      tagline: 'AI-Powered Financial Innovation',
+      tagline: 'Redefining Finance with AI',
     },
     links: [
       { name: 'Home', href: '#home' },
       { name: 'About', href: '#about' },
-      { name: 'Services', href: '#services' },
+      { name: 'Join Waitlist', href: '#waitlist' },
     ],
     social: [
       { name: 'Twitter', href: '#' },

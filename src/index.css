@@ -82,12 +82,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
+    padding: 0.625rem 1.25rem;
     border-radius: 9999px;
     font-weight: 600;
+    font-size: 0.875rem;
     color: rgb(0 0 0);
     background: linear-gradient(to right, rgb(251 191 36), rgb(234 179 8));
     transition: all 0.3s;
+  }
+
+  @media (min-width: 640px) {
+    .btn-primary {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
   }
 
   .btn-primary:hover {
@@ -100,13 +108,21 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
+    padding: 0.625rem 1.25rem;
     border-radius: 9999px;
     font-weight: 600;
+    font-size: 0.875rem;
     color: rgb(255 255 255);
     background-color: rgb(24 24 24);
     border: 1px solid rgb(68 68 68);
     transition: all 0.3s;
+  }
+
+  @media (min-width: 640px) {
+    .btn-secondary {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
   }
 
   .btn-secondary:hover {
@@ -122,22 +138,6 @@
   .card-hover:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 25px -5px rgb(251 191 36 / 0.15);
-  }
-
-  .section-padding {
-    padding: 4rem 1rem;
-  }
-
-  @media (min-width: 640px) {
-    .section-padding {
-      padding: 5rem 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .section-padding {
-      padding: 6rem 2rem;
-    }
   }
 }
 
