@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
 
 const Waitlist = () => {
-  const emailAddress = 'joinwaitlist@theventureforge.com';
+  const emailImageUrl = 'https://maas-log-prod.cn-wlcb.ufileos.com/anthropic/85cf93f4-b800-4272-a100-3670f12d053d/c1af99742d411b58cd244760e277947c.png?UCloudPublicKey=TOKEN_e15ba47a-d098-4fbd-9afc-a0dcf0e4e621&Expires=1770971886&Signature=ZH3NzjwF/6q/NDyu31vo4FZGwak=';
 
   return (
     <section id="waitlist" className="relative py-10 sm:py-12 px-4">
@@ -61,10 +61,13 @@ const Waitlist = () => {
               className="flex justify-center"
             >
               <div className="flex items-center gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full bg-gray-900 border-2 border-gold-500/30 max-w-full sm:max-w-md overflow-hidden">
-                <Mail className="text-gold-400 flex-shrink-0" size={18} sm:size={20} />
-                <span className="text-sm sm:text-lg md:text-xl text-gold-400 font-medium select-none truncate">
-                  {emailAddress}
-                </span>
+                <Mail className="text-gold-400 flex-shrink-0" size={18} />
+                <img
+                  src={emailImageUrl}
+                  alt="Email"
+                  className="h-5 sm:h-6 md:h-7 w-auto object-contain select-none"
+                  draggable="false"
+                />
               </div>
             </motion.div>
 
