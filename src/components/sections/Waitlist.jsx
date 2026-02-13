@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
 
 const Waitlist = () => {
-  const emailImageUrl = 'https://maas-log-prod.cn-wlcb.ufileos.com/anthropic/85cf93f4-b800-4272-a100-3670f12d053d/c1af99742d411b58cd244760e277947c.png?UCloudPublicKey=TOKEN_e15ba47a-d098-4fbd-9afc-a0dcf0e4e621&Expires=1770971886&Signature=ZH3NzjwF/6q/NDyu31vo4FZGwak=';
+  const emailImageUrl = '/email.png'; 
 
   return (
     <section id="waitlist" className="relative py-10 sm:py-12 px-4">
